@@ -1,143 +1,37 @@
-# Shell, basics
+File 0-current_working_directory prints the absolute pathname of the current working directory.
 
-In this project, I underwent an introductory crash course in the Shell. I
+File 1-listit displays the contents list of the current directory.
 
-learned how to navigate directories using `cd`, `pwd`, `ls`, how to look
+File 2-bring_me_home  changes the working directory to the user's home drectory.
 
-around using `ls`, `less`, and `file`, and how to manipulate files with `cp`,
+file 3-listfiles displays the contents of the current working directory in along format.
 
-`mv`, `rm`, and `mkdir`. Further, I practiced working with the `type`, `which`,
+File 4-listmorefiles displays current directory contents including files that are hidden (starting with .).
 
-`help`, and `man` commands, implementing wildcards, reading man pages,
+File 5-listfilesdigitonly displays cthe contents of the currrent working directory in a long format with user and group IDs displayed numerically as well as hidden files.
 
-creating links, and using keyboard shortcuts in Bash.
+File 6-firstdirectory creates a script that creates a directory named my_first_drectory in the /tmp/ directory.
 
-## Tasks :page_with_curl:
+File 7-movethatfile moves the file betty from /tmp/ to /tmp/my_first_directory.
 
-* **0. Where am I?**
+File 8-firstdelete deletes he file betty.
 
-  * [0-current_working_directory](./0-current_working_directory): Bash script that
+File 9-firstdirdeletion deletes the directory my_first_directory that is in the /tmp directory.
 
-  prints the absolute pathname of the current working directory.
+File 10-back writes a script that changes the working directory to the previous one.
 
-* **1. What’s in there?**
+File 11-lists writes a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
 
-  * [1-listit](./1-listit): Bash script that displays the contents list of current directory.
+File 12-file_type writes a script that prints the type of the file named iamafile.
 
-* **2. There is no place like home**
+File 13-symbolic_link creates a symbolic link to /bin/ls, named ls.
 
-  * [2-bring_me_home](./2-bring_me_home): Bash script that changes the working directory to the
+File 14-copy_html creates a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 
-  user's home directory.
+File 15-lets_move creates a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
 
-* **3. The long format**
+File 16-clean_emacs creates a script that deletes all files in the current working directory that end with the character ~.
 
-  * [3-listfiles](./3-listfiles): Bash script that displays current directory contents in
+File 17-tree creates a script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory.
 
-  long format.
-
-* **4. Hidden files**
-
-  * [4-listmorefiles](./4-listmorefiles): Bash script that displays current directory contents,
-
-  including hidden files, using long format.
-
-* **5. I love numbers**
-
-  * [5-listfilesdigitonly](./5-listfilesdigitonly): Bash script that displays current directory
-
-  contents, including hidden files, as follows:
-
-    * Long format.
-
-    * User and group ID's displayed numerically.
-
-* **6. Welcome holberton**
-
-  * [6-firstdirectory](./6-firstdirectory): Bash script that creates a directory named `holberton`
-
-  in the `/tmp/` directory.
-
-* **7. Betty in Holberton**
-
-  * [7-movethatfile](./7-movethatfile): Bash script that moves the file `betty` from `/tmp/` to
-
-  `/tmp/holberton`.
-
-* **8. Bye bye Betty**
-
-  * [8-firstdelete](./8-firstdelete): Bash script that deletes the file `betty` in `/tmp/holberton`.
-
-* **9. Bye bye Holberton**
-
-  * [9-firstdirdeletion](./9-firstdirdeletion): Bash script that deletes the directory `holberton`
-
-  in the `/tmp` directory.
-
-* **10. Back to the future**
-
-  * [10-back](./10-back): Bash script that changes the working directory to the previous one.
-
-* **11. Lists**
-
-  * [11-lists](./11-lists): Bash script that lists all files, including hidden files, in the
-
-  current directory, parent of the working directory, and `/boot` directory, using long format.
-
-* **12. File type**
-
-  * [12-file_type](./12-file_type): Bash script that prints the type of the file named
-
-  `iamafile` located in the `/tmp` directory.
-
-* **13. We are symbols, and inhabit symbols**
-
-  * [13-symbolic_link](./13-symbolic_link): Bash script that creates a symbolic link to `/bin/ls`,
-
-  named `__ls__`.
-
-* **14. Copy HTML files**
-
-  * [14-copy_html](./14-copy_html): Bash script that copies all HTML files from the current
-
-  working directory to the parent of the working directory, but only those that
-
-  did not exist in the parent directory or were newer than the versions in the parent working directory.
-
-* **15. Let’s move**
-
-  * [15-lets_move](./15-lets_move): Bash script that moves all files beginning with an uppercase
-
-  letter to the directory `/tmp/u`.
-
-* **16. Clean Emacs**
-
-  * [16-clean_emacs](./16-clean_emacs): Bash script that deletes all files in the current working
-
-  directory that end with the character `~`.
-
-* **17. Tree**
-
-  * [17-tree](./17-tree): Bash script that creates the directories `welcome/`,
-
-  `welcome/to/` and `welcome/to/holberton` in the current directory.
-
-* **18. Life is a series of commas, not periods**
-
-  * [18-commas](./18-commas): Bash script that lists all files and directories of the current
-
-  directory, including hidden ones, as follows:
-
-    * Separated by commas (`,`).
-
-    * Directory names end with a slash (`/`).
-
-    * Alpha-ordered, except for the directories `.` and `..` which are listed at the beginning.
-
-    * Only digits and letters are used to sort - digits come first.
-
-* **19. File type: Holberton**
-
-  * [holberton.mgc](./holberton.mgc): A magic file that can be used with the command `file` to
-
-  detect `Holberton` data files.
+File 18-commas writes a command that lists all the files and directories of the current directory, separated by commas (,).
